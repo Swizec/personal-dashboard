@@ -1,0 +1,3 @@
+[submodule "statsd"]
+	path = statsd
+	url = https://github.com/Swizec/statsd.git
