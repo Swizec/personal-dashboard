@@ -1,3 +1,0 @@
-[submodule "statsd"]
-	path = statsd
-	url = ./statsd/
