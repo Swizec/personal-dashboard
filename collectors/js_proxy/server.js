@@ -22,9 +22,9 @@ http.createServer(function (req, res) {
     }
 
     switch (qs.t) {
-        case 'c': SDC.increment(qs.t, qs.v); break;
-        case 't': SDC.timing(qs.t, qs.v); break;
-        case 'g': SDC.gauge(qs.t, qs.v); break;
+        case 'c': SDC.increment(qs.b, qs.v); break;
+        case 't': SDC.timing(qs.b, qs.v); break;
+        case 'g': SDC.gauge(qs.b, qs.v); break;
     }
 
     SDC.increment('js_proxy.requests');
