@@ -1,0 +1,21 @@
+{
+  "author": "Swizec Teller <swizec@swizec.com> (http://swizec.com)",
+  "name": "personal-dashboard",
+  "description": "A dashboard of my personal stats",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Swizec/personal-dashboard.git"
+  },
+  "dependencies": {
+      "cube": "",
+      "express": ">= 2.5.5",
+      "ejs": ">= 0.0.1",
+      "socket.io": ""
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

@@ -3,7 +3,8 @@ var http = require('http'),
     fs = require('fs'),
     url = require('url'),
     sdc = require('statsd-client'),
-    SDC = new sdc('localhost', {port: 3200});
+    SDC = new sdc('localhost', {port: 3200}),
+    cube = require('cube');
 
 var gif = fs.readFileSync('./transparent.gif');
 
@@ -28,6 +29,8 @@ http.createServer(function (req, res) {
     }
 
     SDC.increment('js_proxy.requests');
+
+
 
     end();
 }).listen(3202, 'localhost');
